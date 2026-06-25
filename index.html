@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pioneer Support Funds</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Page 1 -->
+    <div class="step active" id="step1">
+        <img src="cover.jpg" class="cover-image" alt="Cover">
+        <h1>PIONEER SUPPORT FUNDS</h1>
+        <button onclick="nextStep()">Continue</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="step" id="step2">
+        <h2>Welcome</h2>
+        <p>
+            Thank you for contacting PIONEER SUPPORT FUNDS.
+            We may ask you a few questions.
+        </p>
+
+        <label>
+            <input type="radio" name="ready" value="YES">
+            YES
+        </label>
+
+        <label>
+            <input type="radio" name="ready" value="NO">
+            NO
+        </label>
+
+        <button onclick="nextStep()">Continue</button>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="step" id="step3">
+        <h2>Applicant Status</h2>
+
+        <label>
+            <input type="radio" name="firsttime" value="First Time">
+            It's my first time
+        </label>
+
+        <label>
+            <input type="radio" name="firsttime" value="Tried Before">
+            I have tried before
+        </label>
+
+        <button onclick="nextStep()">Continue</button>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="step" id="step4">
+        <h2>Select Category</h2>
+
+        <select id="category">
+            <option>Investment</option>
+            <option>Food</option>
+            <option>Bills</option>
+            <option>School Fees</option>
+        </select>
+
+        <button onclick="nextStep()">Continue</button>
+    </div>
+
+    <!-- Page 5 -->
+    <div class="step" id="step5">
+        <h2>Personal Details</h2>
+
+        <input type="text" id="fullName" placeholder="Full Names">
+
+        <input type="tel" id="phone" placeholder="Phone Number">
+
+        <input type="text" id="county" placeholder="County">
+
+        <input type="text" id="idNumber" placeholder="ID Number">
+
+        <input type="email" id="email" placeholder="Email Address">
+
+        <button onclick="nextStep()">Continue</button>
+    </div>
+
+    <!-- Page 6 -->
+    <div class="step" id="step6">
+        <h2>How did you hear about us?</h2>
+
+        <select id="source">
+            <option>Personal Recommendation</option>
+            <option>Social Network</option>
+            <option>Broadcasting of News</option>
+            <option>Other</option>
+        </select>
+
+        <button onclick="nextStep()">Continue</button>
+    </div>
+
+    <!-- Page 7 -->
+    <div class="step" id="step7">
+        <h2>Occupation</h2>
+
+        <select id="occupation">
+            <option>Accountant</option>
+            <option>Business Person</option>
+            <option>Farmer</option>
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Doctor</option>
+            <option>Engineer</option>
+            <option>Lawyer</option>
+            <option>Waiter</option>
+            <option>Home Worker</option>
+            <option>Self Employed</option>
+            <option>Retired</option>
+            <option>Others</option>
+        </select>
+
+        <button onclick="showReview()">Review</button>
+    </div>
+
+    <!-- Review -->
+    <div class="step" id="step8">
+        <h2>Review Details</h2>
+
+        <div id="review"></div>
+
+        <button onclick="submitWhatsApp()">
+            Submit & Continue to WhatsApp
+        </button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
